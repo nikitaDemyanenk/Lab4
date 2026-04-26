@@ -26,11 +26,14 @@
 
 2. Безопасное копирование файлов
 
-&nbsp;&nbsp;&nbsp;&nbsp;Комплексная задача по передаче данных между файлами. Программа реализует полный цикл безопасного ввода-вывода:
+&nbsp;&nbsp;&nbsp;&nbsp;Комплексная задача по передаче данных между файлами. Программа реализует полный цикл безопасного 
+&nbsp;&nbsp;&nbsp;&nbsp;ввода-вывода:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Открытие и закрытие: Гарантированное освобождение файловых дескрипторов в блоке finally (или использование try-with-resources).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Открытие и закрытие: Гарантированное освобождение файловых дескрипторов в блоке finally (или 
+&nbsp;&nbsp;&nbsp;&nbsp;использование try-with-resources).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Чтение и запись: Обработка IOException и FileNotFoundException, возникающих в процессе потоковой передачи данных.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Чтение и запись: Обработка IOException и FileNotFoundException, возникающих в процессе потоковой 
+&nbsp;&nbsp;&nbsp;&nbsp;передачи данных.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Проверка прав доступа и физического наличия файлов перед началом операции.
 
@@ -38,6 +41,8 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;Реализован механизм кастомной обработки числовых данных:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CustomNumberFormatException: Собственный класс исключения, который выбрасывается при ошибке парсинга строки в число (заменяет стандартный NumberFormatException).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CustomNumberFormatException: Собственный класс исключения, который выбрасывается при ошибке 
+&nbsp;&nbsp;&nbsp;&nbsp;парсинга строки в число (заменяет стандартный NumberFormatException).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Система логирования: Весь процесс работы программы сопровождается записью в файл. Каждое пойманное исключение фиксируется в лог-файле с указанием типа ошибки и системного сообщения.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Система логирования: Весь процесс работы программы сопровождается записью в файл. Каждое 
+&nbsp;&nbsp;&nbsp;&nbsp;пойманное исключение фиксируется в лог-файле с указанием типа ошибки и системного сообщения.
